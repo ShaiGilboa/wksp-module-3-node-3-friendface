@@ -1,0 +1,12 @@
+<div class="a-friend">
+    <ul class="many-users">
+        <% friends.forEach(friend => { %>
+            <li class="a-user">
+                <a href="/user/<%- friend.id %>" class="friend-img">
+                <p><%- friend.name %></p>
+                <img src="<%- friend.avatarUrl %>" alt="friend-avatar" class="friend-avatar">
+                </a>
+            </li>
+        <% }); %>
+    </ul>
+</div>

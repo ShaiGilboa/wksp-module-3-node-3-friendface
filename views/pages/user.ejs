@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+<div class="user-header">
+    <img src="<%- user.avatarUrl %>" alt="user-avatar">
+    <% if (!isFriend){ %>
+        <form method='get' action='/newfriend' class='new-friend'>
+            <label for='adding' class="none">First name</label>
+            <input type='text' name='adding' value="<%= user.id %>"class="none"/>
+            <h1><%- user.name %></h1>
+            <button type='submit'>New Friend?</button>
+        </form>
+    <% } else { %>
+        <form method='get' action='/removefriend' class='new-friend'>
+            <label for='removing' class="none">First name</label>
+            <input type='text' name='removing' value="<%= user.id %>" class="none"/>
+            <h1><%- user.name %></h1>
+            <button type='submit'>Not a Friend?</button>
+        </form>
+    <% } %>
+</div>
+<h2 class="users-friends"><%- user.name %>'s friends</h2>
+    <%- include('../partials/friends') %>
+<%- include('../partials/footer') %>
