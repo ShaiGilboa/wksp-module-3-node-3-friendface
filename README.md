@@ -32,7 +32,7 @@ To create a site that will serve up Friendface! Oh, and learn a little more abou
 
 - Ability to view all Faces that are not yet friends. (A button on the page labeled 'FFF' or 'Find Future Friends'.)
 - Ability to add/remove friends faces.
-- Adding/reomving a friend should also update the friend's page. _It may look like that is happening already but don't be fooled. It ain't!
+- Adding/reomving a friend should also update the friend's page. _It may look like that is happening already but don't be fooled. It ain't!_
 - Ability reorder your Friends (upvote/downvote?)
 
 ## Limitations

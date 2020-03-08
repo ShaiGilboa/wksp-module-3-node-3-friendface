@@ -1,0 +1,8 @@
+<%- include('../partials/header') %>
+<div class="current-header">
+    <p>Hi <%- currentUser.name %></p>
+    <img src="<%- currentUser.avatarUrl %>" alt="user-photo" class="user-avatar">
+    <p>Are you friends with any of these?</p>
+</div>
+    <%- include('../partials/friends') %>
+<%- include('../partials/footer') %>

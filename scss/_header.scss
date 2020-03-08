@@ -1,0 +1,40 @@
+
+header {
+    max-height: 100px;
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    background-color: #0D7D45;
+    .logo {
+        margin:0 auto;
+    }
+}
+
+.logout {
+    position: relative;
+    left: 10px;
+    text-decoration: none;
+    margin: auto 0;
+    color: whitesmoke;
+}
+
+.logged-on {
+    position: absolute;
+    right: 20px;
+    height: 100px;
+    img{
+        border-radius: 50px;
+        height: 70px;
+        width: 70px;
+        margin: 5px;
+        object-fit: cover;
+    }
+}
+
+.site-title{
+    display: none;
+}
+
+.sign-in-form {
+    margin:auto;
+}
